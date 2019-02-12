@@ -1,6 +1,12 @@
 # news-classification
 Multinomial Naive Bayes and Support Vector Machine classification using 1150 news (used with tf-idf and stemmer)
 
+1) WORD STEMMER PROCESS (TF-IDF) => Classification using stemmer and tf-idf representation method
+
+2) WORD PROCESS (TF-IDF) => Classification using tf-idf representation method(not stemmer)
+
+3) WORD STEMMER PROCESS (BIGRAM TF-IDF) => Classification using stemmer, bigram and tf-idf representation method
+
 
 Dataset : [1150 Turkish news texts in 5 classes](http://www.kemik.yildiz.edu.tr/?id=28)
 
