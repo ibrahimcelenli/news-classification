@@ -1,0 +1,286 @@
+
+
+
+
+Sum Data Number :   1150
+
+
+Summary
+
+
+        length                                                             \
+         count         mean          std    min      25%     50%      75%   
+label                                                                       
+ekonomi  230.0  2289.760870  1552.241186  346.0  1142.00  1766.5  3067.75   
+magazin  230.0  1107.839130  1342.650789  196.0   551.25   651.0  1108.00   
+saglik   230.0  1683.530435  1320.373500  311.0   898.25  1229.0  2030.25   
+siyasi   230.0  1814.356522  1335.055567  310.0   904.25  1455.5  2397.50   
+spor     230.0  2032.673913  1642.466681  228.0   871.00  1719.0  2596.25   
+
+                  
+             max  
+label             
+ekonomi   7951.0  
+magazin   9958.0  
+saglik    9010.0  
+siyasi   12114.0  
+spor      9480.0  
+
+
+
+
+First 10 Data
+0    Başbakan Recep Tayyip Erdoğan'ın, 9 Mart 2004'...
+1    Papandreu, tedavi altında \n\nYunanistan ana m...
+2    PETKİM limanını özel sektöre açtı\n\nPETKİM Ge...
+3    Yelek şeklindeki kalp cihazı ABD'de onaylandı ...
+4    Bu kez mutlaka\n\n     BASKETBOL Birinci Ligi’...
+5    Modayla mutfağı bir araya getirdi \n\nÜnlü mod...
+6    ABD'den ameliyatsız kısırlaştırma cihazına ona...
+7    Başbakan Recep Tayyip Erdoğan, AB'ye, hem KKTC...
+8    İngiliz The Financial Times gazetesi, yabancı ...
+9    Ankara, Gündüz'e tazminat ödeyecek\n\n    \nAİ...
+Name: message, dtype: object
+libjvm veya zemberek.jar dosyalarının pathleri yanlış yerde! 
+
+
+
+
+WORD STEMMER PROCESS (TF-IDF)
+
+
+
+
+
+
+
+
+Message Train : 920 Message Test :  230 Sum Data :  1150
+
+
+
+
+SVM Clasification: 
+              precision    recall  f1-score   support
+
+    ekonomi       0.90      0.95      0.92        38
+    magazin       0.93      0.95      0.94        41
+     saglik       1.00      0.96      0.98        48
+     siyasi       0.92      0.91      0.92        54
+       spor       0.96      0.96      0.96        49
+
+avg / total       0.94      0.94      0.94       230
+
+SVM Confussion matrix: 
+ [[36  0  0  2  0]
+ [ 0 39  0  1  1]
+ [ 1  0 46  1  0]
+ [ 3  1  0 49  1]
+ [ 0  2  0  0 47]]
+
+
+
+
+SVM Scores : 
+ [ 0.95652174  0.93913043  0.94782609  0.92173913  0.92173913  0.96521739
+  0.97391304  0.94782609  0.94782609  0.96521739]
+
+
+
+
+SVM Accuracy: 0.95 (+/- 0.03)
+
+
+
+
+MultinomialNB Clasification: 
+              precision    recall  f1-score   support
+
+    ekonomi       0.77      0.97      0.86        38
+    magazin       0.95      0.90      0.92        41
+     saglik       1.00      0.92      0.96        48
+     siyasi       0.98      0.87      0.92        54
+       spor       0.94      0.98      0.96        49
+
+avg / total       0.94      0.93      0.93       230
+
+MultinomialNB Confussion matrix:
+ [[37  0  0  1  0]
+ [ 3 37  0  0  1]
+ [ 3  0 44  0  1]
+ [ 5  1  0 47  1]
+ [ 0  1  0  0 48]]
+
+
+
+
+MultinomialNB Scores : 
+ [ 0.92173913  0.91304348  0.93913043  0.90434783  0.89565217  0.93043478
+  0.97391304  0.95652174  0.93043478  0.93913043]
+
+
+
+
+MultinomialNB Accuracy: 0.93 (+/- 0.04)
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+WORD PROCESS (TF-IDF)
+
+
+
+
+
+
+
+
+Message Train : 920 Message Test :  230 Sum Data :  1150
+
+
+
+
+SVM Clasification: 
+              precision    recall  f1-score   support
+
+    ekonomi       0.90      0.97      0.94        38
+    magazin       0.95      1.00      0.98        40
+     saglik       0.96      0.91      0.94        56
+     siyasi       0.94      0.94      0.94        49
+       spor       1.00      0.96      0.98        47
+
+avg / total       0.95      0.95      0.95       230
+
+SVM Confussion matrix: 
+ [[37  0  1  0  0]
+ [ 0 40  0  0  0]
+ [ 3  1 51  1  0]
+ [ 1  1  1 46  0]
+ [ 0  0  0  2 45]]
+
+
+
+
+SVM Scores : 
+ [ 0.94782609  0.97391304  0.95652174  0.93913043  0.89565217  0.93913043
+  0.94782609  0.96521739  0.95652174  0.95652174]
+
+
+
+
+SVM Accuracy: 0.95 (+/- 0.04)
+
+
+
+
+MultinomialNB Clasification: 
+              precision    recall  f1-score   support
+
+    ekonomi       0.79      1.00      0.88        38
+    magazin       0.97      0.95      0.96        40
+     saglik       1.00      0.84      0.91        56
+     siyasi       0.92      0.92      0.92        49
+       spor       0.98      0.98      0.98        47
+
+avg / total       0.94      0.93      0.93       230
+
+MultinomialNB Confussion matrix:
+ [[38  0  0  0  0]
+ [ 1 38  0  1  0]
+ [ 6  1 47  2  0]
+ [ 3  0  0 45  1]
+ [ 0  0  0  1 46]]
+
+
+
+
+MultinomialNB Scores : 
+ [ 0.95652174  0.90434783  0.93043478  0.91304348  0.86956522  0.94782609
+  0.93913043  0.95652174  0.93043478  0.95652174]
+
+
+
+
+MultinomialNB Accuracy: 0.93 (+/- 0.05)
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+----------------------------------------------------------
+WORD STEMMER PROCESS (BIGRAM TF-IDF)
+
+
+
+
+
+
+
+
+Message Train : 920 Message Test :  230 Sum Data :  1150
+
+
+
+
+SVM Clasification: 
+              precision    recall  f1-score   support
+
+    ekonomi       0.92      0.98      0.95        46
+    magazin       0.92      1.00      0.96        47
+     saglik       1.00      0.93      0.96        41
+     siyasi       0.93      0.96      0.95        45
+       spor       1.00      0.90      0.95        51
+
+avg / total       0.95      0.95      0.95       230
+
+SVM Confussion matrix: 
+ [[45  0  0  1  0]
+ [ 0 47  0  0  0]
+ [ 2  1 38  0  0]
+ [ 1  1  0 43  0]
+ [ 1  2  0  2 46]]
+
+
+
+
+SVM Scores : 
+ [ 0.96521739  0.93913043  0.95652174  0.91304348  0.89565217  0.93913043
+  0.96521739  0.94782609  0.93913043  0.95652174]
+
+
+
+
+SVM Accuracy: 0.94 (+/- 0.04)
+
+
+
+
+MultinomialNB Clasification: 
+              precision    recall  f1-score   support
+
+    ekonomi       0.85      0.98      0.91        46
+    magazin       0.96      0.96      0.96        47
+     saglik       1.00      0.90      0.95        41
+     siyasi       0.93      0.93      0.93        45
+       spor       0.98      0.92      0.95        51
+
+avg / total       0.94      0.94      0.94       230
+
+MultinomialNB Confussion matrix:
+ [[45  0  0  1  0]
+ [ 1 45  0  0  1]
+ [ 3  1 37  0  0]
+ [ 3  0  0 42  0]
+ [ 1  1  0  2 47]]
+
+
+
+
+MultinomialNB Scores : 
+ [ 0.95652174  0.93043478  0.94782609  0.90434783  0.89565217  0.93913043
+  0.97391304  0.95652174  0.94782609  0.92173913]
+
+
+
+
+MultinomialNB Accuracy: 0.94 (+/- 0.05)
