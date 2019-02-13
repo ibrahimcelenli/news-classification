@@ -16,4 +16,6 @@ Dataset : [1150 Turkish news texts in 5 classes](http://www.kemik.yildiz.edu.tr/
             scikit-learn              0.19.0
             jpype                     0.6.3
             textblob                  0.15.1
-            zemberek                  https://github.com/kemalcanbora/zemberek_parser
+
+
+zemberek_parser folder = https://github.com/kemalcanbora/zemberek_parser
